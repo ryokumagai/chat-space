@@ -1,0 +1,58 @@
+.Chat
+  .RightHeader
+    .RightHeader__group
+      .RightHeader__groupName
+        test
+      .RightHeader__memberList
+        Member : masa
+    = link_to "#", class: "RightHeader__editBtn" do
+      Edit
+  .MessageList
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__userName
+          masa
+        .MessageInfo__date
+          2020/7/15(wed) 00:00:00
+      .Message
+        おはよう!
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__userName
+          masa
+        .MessageInfo__date
+          2020/7/15(wed) 00:00:00
+      .Message
+        こんにちは!
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__userName
+          masa
+        .MessageInfo__date
+          2020/7/15(wed) 00:00:00
+      .Message
+        こんばんは!
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__userName
+          masa
+        .MessageInfo__date
+          2020/7/15(wed) 00:00:00
+      .Message
+        お疲れ様!
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__userName
+          masa
+        .MessageInfo__date
+          2020/7/15(wed) 00:00:00
+      .Message
+        がんばれ!
+  .MessageForm
+    %form.Form
+      .Form__contents
+        %input.Form__inputText{"placeholder": "type a message", "type": "text"}
+        %label{class: "Form__inputImage"}
+          = icon('far', 'image', class: 'Form__icon')
+          %input{type: "file", class: "Hidden"}
+      %input.Form__btn{"type": "submit", "value": "Send"}
