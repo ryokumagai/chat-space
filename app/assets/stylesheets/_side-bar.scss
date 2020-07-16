@@ -44,7 +44,11 @@
 
 .Group {
   padding: 20px 0 40px 0;
-  color: #ffffff;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
   &__name{
     font-size: 15px;
   }
