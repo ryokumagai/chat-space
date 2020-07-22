@@ -35,6 +35,7 @@ $form-border: none;
     height: calc(100vh - 100px - 90px);
     padding:35px 40px 0;
     background-color: #fafafa;
+    overflow: scroll;
     .MessageBox {
       margin-bottom: 46px;
       .MessageInfo {
